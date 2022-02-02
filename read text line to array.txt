@@ -1,0 +1,11 @@
+ Dim lines() As String = IO.File.ReadAllLines("C:\txt.txt")
+Dim lineArray As New ArrayList()
+
+For x As Integer = 0 To lines.GetUpperBound(0)
+	lineArray.Add(lines(x))
+Next
+
+MsgBox("Show each line")
+For x = 0 To lineArray.Count - 1
+	MsgBox(lineArray.Item(x))
+Next

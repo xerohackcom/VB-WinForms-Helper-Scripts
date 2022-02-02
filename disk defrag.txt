@@ -1,0 +1,11 @@
+   Dim ComputerName As String = ""
+        Dim wmi As New ManagementObjectSearcher("Select * from Win32_Volume Where Name = 'C:\\'")
+
+
+        Dim volumes As ManagementObjectCollection
+
+        volumes = wmi.Get()
+
+        For Each Volume As ManagementObject In volumes
+            Volume.InvokeMethod("Defrag", Nothing)
+        Next

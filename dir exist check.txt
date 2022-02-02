@@ -1,0 +1,6 @@
+Dim dir_name As String = Application.StartupPath
+    If System.IO.Directory.Exists(dir_name) Then
+        lblDir1.Text = dir_name & " exists"
+    Else
+        lblDir1.Text = dir_name & " does not exist"
+    End If

@@ -1,0 +1,11 @@
+Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+    ' make a reference to a directory
+    Dim di As New IO.DirectoryInfo("c:\")
+    Dim diar1 As IO.FileInfo() = di.GetFiles()
+    Dim dra As IO.FileInfo
+
+   'list the names of all files in the specified directory
+    For Each dra In diar1
+        ListBox1.Items.Add(dra)
+    Next
+End Sub

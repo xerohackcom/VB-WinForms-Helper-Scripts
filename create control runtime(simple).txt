@@ -1,0 +1,15 @@
+Public Class Form1
+    Dim cLeft As Integer = 1
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        AddNewTextBox()
+    End Sub
+    Public Function AddNewTextBox() As System.Windows.Forms.TextBox
+        Dim txt As New System.Windows.Forms.TextBox()
+        Me.Controls.Add(txt)
+        txt.Top = cLeft * 25
+        txt.Left = 100
+        txt.Text = "TextBox " & Me.cLeft.ToString
+        cLeft = cLeft + 1
+        Return txt
+    End Function
+End Class

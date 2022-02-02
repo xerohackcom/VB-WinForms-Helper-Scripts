@@ -1,0 +1,5 @@
+If My.Computer.Registry.GetValue("HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\.NETFramework", "TestValue", Nothing) Then
+            MsgBox("Negative statement here")
+        Else
+            MsgBox("Positive statement here") 'or permission code goes here
+        End If

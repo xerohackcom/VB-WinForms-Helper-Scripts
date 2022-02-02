@@ -1,0 +1,17 @@
+ws.Forms.FlatStyle.System
+        Me.LabelSeparator.Location = New System.Drawing.Point(87, 98)
+        Me.LabelSeparator.Name = "LabelSeparator"
+        Me.LabelSeparator.Size = New System.Drawing.Size(642, 3)
+        Me.LabelSeparator.TabIndex = 3
+        '
+        'ListViewComponents
+        '
+        Me.ListViewComponents.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ComponentValue, Me.ComponentName, Me.Version, Me.Locale, Me.StubPath, Me.KeyFileName})
+        Me.ListViewComponents.FullRowSelect = True
+        Me.ListViewComponents.Location = New System.Drawing.Point(87, 122)
+        Me.ListViewComponents.MultiSelect = False
+        Me.ListViewComponents.Name = "ListViewComponents"
+        Me.ListViewComponents.Size = New System.Drawing.Size(640, 495)
+        Me.ListViewComponents.SmallImageList = Me.ImageListComponents
+        Me.ListViewComponents.TabIndex = 1
+ 

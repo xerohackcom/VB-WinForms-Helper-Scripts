@@ -1,0 +1,9 @@
+		FastColoredTextBox1.Clear()
+		FastColoredTextBox1.SelectedText = "<!DOCTYPE Html>" & vbCrLf
+        FastColoredTextBox1.SelectedText = "<Html>" & vbCrLf
+        FastColoredTextBox1.SelectedText = "<Head>" & vbCrLf
+        FastColoredTextBox1.SelectedText = "<Title>" & TextBox1.Text & "</title>" & vbCrLf
+        FastColoredTextBox1.SelectedText = "<Link rel=" & char1 & "icon" & char1 & " href=" & char1 & TextBox2.Text & char1 & " type=" & char1 & "image/x-icon" & char1 & ">" & vbCrLf
+        FastColoredTextBox1.SelectedText = "</Head>" & vbCrLf
+        FastColoredTextBox1.SelectedText = "<body bgcolor=" & " " & char1 & TextBox3.Text & char1 & " background=" & char1 & TextBox4.Text & char1 & " link=" & char1 & TextBox5.Text & char1 & " alink=" & char1 & TextBox6.Text & char1 & " vlink=" & char1 & TextBox7.Text & char1 & " text=" & char1 & TextBox8.Text & char1 & ">" & vbCrLf
+        FastColoredTextBox1.SelectedText = "</body>" & vbCrLf

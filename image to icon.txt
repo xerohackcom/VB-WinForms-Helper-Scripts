@@ -1,0 +1,6 @@
+Dim blah As Bitmap = PictureBox1.Image
+		Dim ico As Icon = Icon.FromHandle(blah.GetHicon())
+		Dim file As FileStream = New FileStream("C:\users\myUserName\desktop\blah.ico", FileMode.OpenOrCreate)
+		ico.Save(file)
+		file.Close()
+		ico.Dispose()

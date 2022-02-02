@@ -1,0 +1,2 @@
+Dim wb as new WebClient
+Dim html as string = wb.DownloadString("http://stackoverflow.com")

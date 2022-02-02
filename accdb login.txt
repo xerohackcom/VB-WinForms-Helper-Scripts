@@ -1,0 +1,11 @@
+Try
+            Dim login = UsersTableAdapter.UserPasswordInput(UserIDTextBox.Text, UserPasswordTextBox.Text)
+
+            If login Is Nothing Then
+                MsgBox("ERROR: Invalid Credentials!", MsgBoxStyle.Critical)
+            Else
+                MsgBox("WELCOME", MsgBoxStyle.Information)
+            End If
+        Catch ex As Exception
+            MsgBox("User ID is only numbers!")
+        End Try

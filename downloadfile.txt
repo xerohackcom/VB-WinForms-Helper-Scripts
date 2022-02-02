@@ -1,0 +1,2 @@
+Dim wc As WebClient = New WebClient()
+wc.DownloadFile(sURL, sFile)

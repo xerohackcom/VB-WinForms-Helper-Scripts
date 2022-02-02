@@ -1,0 +1,15 @@
+Sub fadein()
+        For fadeinside = 0.0 To 1.1 Step 0.1
+            Me.Opacity = fadeinside
+            Me.Refresh()
+            Threading.Thread.Sleep(1)
+        Next
+    End Sub
+
+    Sub fadeout()
+        For fadeoutside = 90 To 10 Step -10
+            Me.Opacity = fadeoutside / 100
+            Me.Refresh()
+            Threading.Thread.Sleep(1)
+        Next
+    End Sub

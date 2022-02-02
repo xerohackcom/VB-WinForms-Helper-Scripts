@@ -1,0 +1,11 @@
+Dim r As New Drawing2D.Grarhicsrath 
+r.StartFigure()
+r.AddArc(New Rectangle(0, 0, 40, 40), 180, 90)
+r.AddLine(10, 0, Button18.Width - 40, 0)
+r.AddArc(New Rectangle(Button18.Width - 40, 0, 40, 40), -90, 180)
+r.AddLine(Button18.Width, 40, Button18.Width, Button18.Height - 40)
+r.AddArc(New Rectangle(Button18.Width - 40, Button18.Height - 40, 40, 40), 0, 180)
+r.AddLine(Button18.Width - 40, Button18.Height, 40, Button18.Height)
+r.AddArc(New Rectangle(0, Button18.Height - 40, 40, 40), 180, 90)
+r.CloseFigure()
+Button18.Region = New Region(r)

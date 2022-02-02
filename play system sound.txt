@@ -1,0 +1,2 @@
+Dim soundPlayer As New System.Media.SoundPlayer("sound.wav")
+soundPlayer.Play() 'Change sound.wav into the file that you need
